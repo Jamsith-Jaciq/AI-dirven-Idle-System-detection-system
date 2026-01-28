@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 from datetime import datetime
 import os
-from .database import db, ClientHeartbeat, PresenceLog
-from .engine import evaluate_client_status
+from database import db, ClientHeartbeat, PresenceLog
+from engine import evaluate_client_status
 
 app = Flask(__name__, template_folder='dashboard')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///lab_monitor.db'

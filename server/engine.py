@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from .database import ClientHeartbeat, PresenceLog
+from database import ClientHeartbeat, PresenceLog
 
 # CONFIG
 IDLE_TIME_THRESHOLD = 300 # Seconds (5 minutes)
